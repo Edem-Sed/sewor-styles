@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewor Styles</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-sans antialiased text-gray-700">
+
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+
+                <div class="flex-shrink-0 text-xl font-bold text-gray-800">
+                    Sewor Styles
+                </div>
+
+                <input type="checkbox" id="menu-toggle" class="hidden peer">
+                <label for="menu-toggle" class="md:hidden cursor-pointer">
+                    <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+
+                <div class="hidden md:flex space-x-6 font-bold">
+                    <a href="#home" class="text-gray-700 hover:text-yellow-500">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-yellow-500">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-yellow-500">Services</a>
+                    <a href="#contact" class="text-gray-700 hover:text-yellow-500">Contact</a>
+                </div>
+            </div>
+
+            <div class="peer-checked:block hidden md:hidden mt-2 font-bold">
+                <a href="#home" class="block py-2 text-gray-700 hover:text-yellow-500">Home</a>
+                <a href="#about" class="block py-2 text-gray-700 hover:text-yellow-500">About</a>
+                <a href="#services" class="block py-2 text-gray-700 hover:text-yellow-500">Services</a>
+                <a href="#contact" class="block py-2 text-gray-700 hover:text-yellow-500">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="home" class="bg-cover bg-center h-screen text-white pt-16"
+        style="background-image: url('./images/yu.jpg');">
+        <div class=" bg-opacity-60 h-full w-full flex items-center justify-center">
+            <div class="text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Tailoring Your Style</h1>
+                <p class="text-lg md:text-xl mb-6">Expert tailoring and custom suits just for you.</p>
+                <a href="#contact"
+                    class="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-6 rounded-md transition">Book an
+                    Appointment</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <img src="./images/ty.jpg" alt="Tailor" class="rounded shadow w-full h-auto">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">About Sewor Styles</h2>
+                <p class="mb-4">We have many years of experience. We care about making clothes that make you feel
+                    confident and happy.</p>
+                <a href="#contact" class="text-yellow-600 hover:underline">Get in Touch &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid gap-8 md:grid-cols-3">
+                <div class="bg-white p-6 shadow rounded text-center">
+                    <img src="./images/we.jpg" alt="Custom Suits" class="mb-4 w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold mb-2">Custom Suits</h3>
+                    <p>We make suits that fit you perfectly and look great.</p>
+                </div>
+                <div class="bg-white p-6 shadow rounded text-center">
+                    <img src="./images/ui.jpg" alt="Alterations" class="mb-4 w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold mb-2">Alterations</h3>
+                    <p>We fix and change clothes to make them fit better.</p>
+                </div>
+                <div class="bg-white p-6 shadow rounded text-center">
+                    <img src="./images/pi.jpg" alt="Personal Styling" class="mb-4 w-full h-48 object-cover rounded">
+                    <h3 class="text-xl font-semibold mb-2">Personal Styling</h3>
+                    <p>We help you choose clothes that match your style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4 max-w-xl">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <form class="bg-white p-8 shadow rounded space-y-4">
+                <input type="text" placeholder="Your Name" class="w-full border border-gray-300 p-3 rounded" required>
+                <input type="email" placeholder="Your Email" class="w-full border border-gray-300 p-3 rounded" required>
+                <textarea placeholder="Your Message" class="w-full border border-gray-300 p-3 rounded h-32"
+                    required></textarea>
+                <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-6 rounded w-full">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-white py-6 text-center space-y-2">
+        <p>&copy; 2025 Sewor Styles. All rights reserved.</p>
+        <p>📞 +233 543050152</p>
+        <p>📍 Ashaley Botwe New Town</p>
+    </footer>
+</body>
+
+</html>
