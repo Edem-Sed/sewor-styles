@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Appointment - Sewor Styles</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <div class="max-w-2xl mx-auto mt-16 p-6 bg-white shadow rounded">
+    <h1 class="text-3xl font-bold mb-6 text-center">Book an Appointment</h1>
+
+    <form action="https://formspree.io/f/mldnyqgq" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Full Name" class="w-full p-3 border rounded" required>
+      <input type="email" name="email" placeholder="Email Address" class="w-full p-3 border rounded" required>
+      <input type="tel" name="phone" placeholder="Phone Number" class="w-full p-3 border rounded" required>
+      <input type="date" name="date" class="w-full p-3 border rounded" required>
+      <input type="time" name="time" class="w-full p-3 border rounded" required>
+      <textarea name="message" placeholder="Special Requests (Optional)" class="w-full p-3 border rounded h-32"></textarea>
+      <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white py-3 px-6 rounded w-full">
+        Confirm Appointment
+      </button>
+    </form>
+  </div>
+
+</body>
+</html>
